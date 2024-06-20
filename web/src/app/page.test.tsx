@@ -9,8 +9,7 @@ describe('Root layout', () => {
             json: async () => ({})
         });
 
-        const RenderedPage = await Root();
-        const { container } = render(RenderedPage);
+        const { container } = render(<Root />);
 
         expect(container).not.toBeEmptyDOMElement();
     });

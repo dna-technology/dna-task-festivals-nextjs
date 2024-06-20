@@ -11,7 +11,8 @@ describe('Auth router', () => {
             const response = await request(app)
                 .post('/auth/login')
                 .send({
-                    email: 'test@example.com'
+                    email: 'test@example.com',
+                    password: 'my_secret_password'
                 });
 
             // then

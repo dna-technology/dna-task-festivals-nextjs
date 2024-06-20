@@ -1,18 +1,13 @@
 import { Request, Response, Router } from 'express';
-import { User } from './types';
+import { db } from './db';
 
 const authRouter = Router();
 
-const USERS: User[] = [
-    {
-        id: 1,
-        name: 'John',
-        email: 'test@example.com',
-    },
-];
-
 authRouter.post('/login', (request: Request, response: Response) => {
-    const user = USERS.find(({ email }) => request.body.email);
+    const user = db.getAllUsers().find(({ email, password }) =>
+        request.body.email === email &&
+        request.body.password === password
+    );
 
     if (!user) {
         return response

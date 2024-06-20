@@ -1,5 +1,6 @@
-export interface User {
-    id: number;
+export interface UserData {
+    id: string;
     email: string;
+    password: string;
     name: string;
 }

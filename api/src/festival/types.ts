@@ -1,11 +1,12 @@
-export interface Duration {
+export interface FestivalDuration {
     end: string;
     start: string;
 }
 
-export interface Festival {
-    id: number;
+export interface FestivalData {
+    id: string;
     name: string;
     location: string;
-    duration: Duration;
+    duration: FestivalDuration;
+    price: number;
 }

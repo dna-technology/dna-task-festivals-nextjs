@@ -10,6 +10,7 @@ export const typeDefs = gql`
         id: ID!
         name: String!
         location: String!
+        price: Float!
         duration: Duration!
     }
     
