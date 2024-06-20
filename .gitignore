@@ -1,0 +1,8 @@
+.idea
+
+web/node_modules
+web/.next
+web/.swc
+
+api/node_modules
+api/dist

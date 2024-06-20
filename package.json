@@ -1,0 +1,14 @@
+{
+  "name": "festivals",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:api": "npm start --prefix api",
+    "start:web": "npm run dev --prefix web",
+    "test:api": "npm test --prefix api",
+    "test:web": "npm test --prefix web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
